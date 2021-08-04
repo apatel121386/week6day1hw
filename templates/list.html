@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h4> This is my list of Favorite cars</h4>
+
+<p>Here are my favorite cars in order:</p>
+<ol>
+    {% for c in Car_list %}
+        <li>{{c}}</li>
+    {% endfor %}
+</ol>
+
+
+{% endblock content %}
